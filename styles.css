@@ -1,0 +1,75 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+h1 {
+    color: rgb(71, 166, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*Div for the content map + Description*/
+.container {
+    background-color: rgb(215, 244, 255);
+    justify-content: center;
+    position: relative;
+    margin:0 20%;
+    border-radius: 8px;
+    height: 80%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.module {
+    clear: both;
+    margin: 0 0 1rem;
+    position: relative;
+    font-size: .66rem;
+    padding: 1.2rem;
+}
+
+#text-title {
+    color: rgb(0, 87, 114);
+    text-transform: uppercase;
+    padding: 1.2rem;
+    text-decoration: none;
+}
+
+.text p {
+    padding: 0 1.2rem;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(65, 65, 65);
+    font-size: 1rem;
+}
+
+#map {
+    height: 60vh;
+    width: 100vh;
+    margin: auto;
+    border-radius: 8px;
+    -webkit-filter: drop-shadow(0 20px 35px rgba(0, 0, 0, 0.4));
+    filter: drop-shadow(0 20px 35px rgba(0, 0, 0, 0.4));
+}
+
+/*Add zoom in on map hover*/
+#map:hover {
+    transform: scale(1.02);
+    transition: .5s;
+}
