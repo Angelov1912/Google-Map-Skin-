@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Google Maps skin using JavaScript API</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+    <h1>Custom map using JavaScript API</h1>
+    <div class="container">
+        <div class="module">
+            <div id="map"></div>
+        </div>
+        <div class="text">
+            <a href="/index.html" id="text-title">North Middlesex Hospital</a>
+        <p>North Middlesex University Hospital, known locally as North Mid, 
+            is a district general hospital in Edmonton in the London Borough of Enfield.
+            The hospital is managed by North Middlesex University Hospital NHS Trust. 
+        </p>
+        </div>
+    <!--Add Script for the google JS API-->
+    <!--API Key- from "key=" to "&callback"-->
+    <!--To add different map style remove current API key and add the new one between these two points in coment above-->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQQ5OCrMXS-AhQOlciEy8bcMbQzRSYnbw&callback=initMap&v=weekly"
+      async
+    ></script>
+</body>
+</html>
